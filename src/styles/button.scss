@@ -32,4 +32,19 @@ button {
     background: var(--background-button2);
     color: var(--yellow);
   }
+
+  & .count-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    background: var(--yellow);
+    color: var(--background-button2);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 }
