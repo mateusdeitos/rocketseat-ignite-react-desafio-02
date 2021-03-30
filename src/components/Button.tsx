@@ -15,7 +15,7 @@ export function Button({ iconName, title, selected, count, ...rest }: ButtonProp
     <button type="button" {...(selected && { className: 'selected' })} {...rest}>
       <Icon name={iconName} color={selected ? '#FAE800' : '#FBFBFB'} />
       {title}
-      <span className="count-badge">{count}</span>
+      <span className={`count-badge ${selected ? "" : "transparent"}`}>{count}</span>
     </button>
   );
 }
